@@ -13,13 +13,13 @@
 <body>
 
 <header>
-    <nav class="navbar navbar-light">
-      <h1>TableSpotter</h1>
-      <div class="nav-links">
-        <a class="nav-item nav-link" href="#">Home</a>
-        <a class="nav-item nav-link" href="#">Dashboard</a>
+    <nav class="navbar navbar-dark">
+        <div class="nav-links">
         <a class="nav-item nav-link" href="#">Login</a>
-        <a class="nav-item nav-link" href="#">Logout</a>
+        <a class="nav-item nav-link" href="#">Register</a>
+          {{#if session.logged_in}}
+          {{else}}
+          <a class="nav-item nav-link" href="/">Home</a>
       </div>
     </nav>
 </header>
