@@ -1,22 +1,14 @@
 const router = require('express').Router();
-const { User } = require('../models');
+const { User, Restaurant} = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
-    const reservationData = await reservations.findAll({
-        include: [
-            {
-                model: User,
-                attributes: ['name'],
-            },
-        ],
-    });
+    const restaurantData = await Restaurant.findAll();
 
-    const reservations = reservationData.map(reservation => reservation.toJSON());
+    const restaurants = restaurantData.map(restaurants => restaurants.toJSON());
 
-    res.render('homepage', {
-        reservations,
-        logged_in: req.session.logged_in
+    res.render('home', {
+        restaurants
     });
 });
 
