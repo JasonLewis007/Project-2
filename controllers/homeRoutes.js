@@ -77,22 +77,22 @@ router.get('/reservations/:id', withAuth, async (req, res) => {
     });
 });
 
-router.get('/review/:id', withAuth, async (req, res) => {
-    const reviewId = req.params.id;
-    const reviewData = await review.findByPk(reviewId, {
-        include: [
-            {
-                model: User,
-                attributes: ['name'],
-            },
-        ],
-    });
-    const review = reviewData.toJSON();
-    console.log(review);
-    res.render('review', {
-        ...review,
-        logged_in: req.session.logged_in
-    });
-});
+// router.get('/review/:id', withAuth, async (req, res) => {
+//     const reviewId = req.params.id;
+//     const reviewData = await review.findByPk(reviewId, {
+//         include: [
+//             {
+//                 model: User,
+//                 attributes: ['name'],
+//             },
+//         ],
+//     });
+//     const review = reviewData.toJSON();
+//     console.log(review);
+//     res.render('review', {
+//         ...review,
+//         logged_in: req.session.logged_in
+//     });
+// });
 
 module.exports = router;
