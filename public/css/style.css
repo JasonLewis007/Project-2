@@ -1,0 +1,30 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+    
+}
+
+* {
+    border: .1px solid rgba(15, 39, 149, 0.419);
+}
+
+main {
+    height: 100vh;
+}
+
+header, footer {
+    background-color: rgb(12, 9, 46);
+}
+
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    justify-content: space-between;
+}
