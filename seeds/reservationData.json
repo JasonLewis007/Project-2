@@ -1,0 +1,20 @@
+[
+    {
+        "date": "May 5, 2023",
+        "time": "12:00pm",
+        "party_size": "5",
+        "occasion": "Birthday"
+    },
+    {
+        "date": "May 10, 2023",
+        "time": "3:00pm",
+        "party_size": "10",
+        "occasion": "Date"
+    },
+    {
+        "date": "May 15, 2023",
+        "time": "5:00pm",
+        "party_size": "3",
+        "occasion": "Mothers Day"
+    }
+]

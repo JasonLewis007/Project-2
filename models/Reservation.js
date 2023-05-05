@@ -20,7 +20,7 @@ Reservation.init(
             type: DataTypes.STRING,
             allowNull: false
         },
-        partySize: {
+        party_size: {
             type: DataTypes.INTEGER,
             allowNull: false
         },

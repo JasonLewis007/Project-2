@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { User, Restaurant} = require('../models');
+const { User, Restaurant, Reservation } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
@@ -13,16 +13,14 @@ router.get('/', async (req, res) => {
 });
 
 router.get('/profile', withAuth, async (req, res) => {
-    const reservationData = await reservations.findAll({
-        where: {
-            user_id: req.session.user_id
-        }
-    });
-    const reservations = reservationData.map(reservation => reservation.toJSON());
-    console.log(reservations);
+    const reservationData = await Reservation.findAll();
+
+    const reservations = reservationData.map(reservations => reservations.toJSON());
+    //console.log(reservations);
+
     res.render('profile', {
-        logged_in: req.session.logged_in,
-        projects
+        //logged_in: req.session.logged_in,
+        reservations
     });
 });
 
@@ -46,7 +44,7 @@ router.get('/profile/:id', withAuth, async (req, res) => {
 
 router.get('/login', (req, res) => {
     if (req.session.logged_in) {
-        return res.redirect('/profile');
+        return res.redirect('/');
     }
     res.render('login');
 });
