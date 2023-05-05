@@ -3,6 +3,7 @@
         "name": "Phở Hoà Noodle Soup",
         "photo": "https://img.grouponcdn.com/deal/2uwkxZV9S2VGyrxXtrvaQZnjJLfN/2u-700x420/v1/t440x300.jpg",
         "description": "Combine our delicious world famous and healthy broth with your choice of quality meats, vegetables and herbs. Our ingredients are locally sourced and served fresh to the table! In addition to pho, we also specialize in a variety of rice plates, vermicelli bowls, snax, and kids meals. Our goal is to provide delicious and authentic Vietnamese meals. From vegetarian items to our signature phở, our expansive menu offers a variety of options for everybody.",
+        "address": "3000 Central Ave, Charlotte, NC 28205",
         "hours": "Sun-Thurs: 9am-10pm Fri-Sat: 9am-12am",
         "phone_number": "4082381481"
     },
@@ -10,6 +11,7 @@
         "name": "Boiling Pot",
         "photo": "https://img.restaurantguru.com/r5a3-Boiling-Pot-food-2022-10-13.jpg",
         "description": "China has a rich hot pot history that can be traced back more than 1,000 years. Mongol horsemen would fill their overturned helmets with water, place them in embers to simmer and add meat and vegetables. As the Mongols traveled throughout China, they began to create their own unique dishes by adding local ingredients.",
+        "address": "7010 Smith Corners Blvd F, Charlotte, NC 28269",
         "hours": "Everyday from 11am - 10pm",
         "phone_number": "7044969026"
     },
@@ -17,6 +19,7 @@
         "name": "Steak 48",
         "photo": "https://media.bizj.us/view/img/12304611/steak-48-restaurant-survey-winner-mk018*1200xx7689-4335-0-410.jpg",
         "description": "James Beard-nominated restaurateurs Jeffrey and Michael Mastro, their father Dennis, and business partner Scott Troilo, created Steak 48 with a warm, contemporary atmosphere, luxury personal service and the highest quality menu of the highest quality USDA Prime Steaks, highest grade Waygu selections from arount the world including Japanese A5 and fresh fish and shellfish flown in daily and are sustainably sourced when ever possible. Choose from our world class selection of 6,000 wines or try one of our hand-crafted cocktails made from locally sourced ingredient. At Steak 48 attention to detail and pride go into every one of our guest experiences, lets make a great evening together!",
+        "address": "4425 Sharon Rd, Charlotte, NC 28211",
         "hours": "EveryDay 4pm - 10pm",
         "phone_number": "9805804848"
     }

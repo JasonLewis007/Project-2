@@ -23,6 +23,9 @@ Restaurant.init(
             type: DataTypes.TEXT,
             allowNull: false
         },
+        address: {
+            type: DataTypes.TEXT
+        },
         hours: {
             type: DataTypes.STRING,
             allowNull: false
