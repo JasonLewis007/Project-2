@@ -30,6 +30,10 @@ Restaurant.init(
         phone_number: {
             type: DataTypes.STRING,
             allowNull: false
+        },
+        address: {
+            type: DataTypes.STRING,
+            allowNull: false
         }
     },
     {
