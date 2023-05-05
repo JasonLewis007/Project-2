@@ -67,6 +67,13 @@ router.get('/reservations/:id', withAuth, async (req, res) => {
     });
 });
 
+router.get('/form', withAuth, async (req, res) => {
+    if (req.session.logged_in) {
+        return res.redirect('/form');
+    }
+    res.render('form');
+})
+
 // router.get('/review/:id', withAuth, async (req, res) => {
 //     const reviewId = req.params.id;
 //     const reviewData = await review.findByPk(reviewId, {
