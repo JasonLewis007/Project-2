@@ -8,6 +8,7 @@ router.get('/', async (req, res) => {
     const restaurants = restaurantData.map(restaurants => restaurants.toJSON());
 
     res.render('home', {
+        logged_in: req.session.logged_in,
         restaurants
     });
 });
@@ -19,7 +20,7 @@ router.get('/profile', withAuth, async (req, res) => {
     //console.log(reservations);
 
     res.render('profile', {
-        //logged_in: req.session.logged_in,
+        logged_in: req.session.logged_in,
         reservations
     });
 });
@@ -44,7 +45,7 @@ router.get('/profile/:id', withAuth, async (req, res) => {
 
 router.get('/login', (req, res) => {
     if (req.session.logged_in) {
-        return res.redirect('/');
+        return res.redirect('/profile');
     }
     res.render('login');
 });
