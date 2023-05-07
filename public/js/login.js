@@ -3,6 +3,7 @@ console.log('Hello from login.js!');
 const loginForm = $('#login-form');
 const emailInput = $('#login-email');
 const passwordInput = $('#login-pw');
+const userName = $('login-name');
 
 loginForm.on('submit', async (event) => {
     try {
@@ -10,6 +11,7 @@ loginForm.on('submit', async (event) => {
         event.preventDefault();
         //collect the login data (email and password)
         const data = {
+            name: userName.val(),
             email: emailInput.val(),
             password: passwordInput.val()
         }
