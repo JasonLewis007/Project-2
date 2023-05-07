@@ -21,6 +21,13 @@ const seedDatabase = async () => {
         returning: true,
     });
 
+    /*for (const reservation of reservationData) {
+        await Reservation.create({
+            ...reservation,
+            user_id: users[Math.floor(Math.random() * users.length)].id,
+        });
+    }*/
+
 
     process.exit(0);
 };

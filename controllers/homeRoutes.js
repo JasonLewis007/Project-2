@@ -14,32 +14,16 @@ router.get('/', async (req, res) => {
 });
 
 router.get('/profile', withAuth, async (req, res) => {
-    const reservationData = await Reservation.findAll();
-
-    const reservations = reservationData.map(reservations => reservations.toJSON());
-    //console.log(reservations);
-
+    const reservationData = await Reservation.findAll({
+        where: {
+            user_id: req.session.user_id
+        }
+    });
+    const reservations = reservationData.map(reservation => reservation.toJSON());
+    console.log(reservations);
     res.render('profile', {
         logged_in: req.session.logged_in,
         reservations
-    });
-});
-
-router.get('/profile/:id', withAuth, async (req, res) => {
-    const profileId = req.params.id;
-    const profileData = await profile.findByPk(profileId, {
-        include: [
-            {
-                model: User,
-                attributes: ['name'],
-            },
-        ],
-    });
-    const profile = profileData.toJSON();
-    console.log(profile);
-    res.render('profile', {
-        ...profile,
-        logged_in: req.session.logged_in
     });
 });
 
@@ -49,6 +33,11 @@ router.get('/login', (req, res) => {
     }
     res.render('login');
 });
+
+router.get('/form', withAuth, async (req, res) => {
+    res.render('form');
+});
+
 
 router.get('/reservations/:id', withAuth, async (req, res) => {
     const reservationId = req.params.id;
@@ -67,13 +56,6 @@ router.get('/reservations/:id', withAuth, async (req, res) => {
         logged_in: req.session.logged_in
     });
 });
-
-router.get('/form', withAuth, async (req, res) => {
-    if (req.session.logged_in) {
-        return res.redirect('/form');
-    }
-    res.render('form');
-})
 
 // router.get('/review/:id', withAuth, async (req, res) => {
 //     const reviewId = req.params.id;
