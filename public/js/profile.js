@@ -36,4 +36,4 @@ Profile.init(
     }
 );
 
-module.exports = Project;
+module.exports = Profile;
