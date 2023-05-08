@@ -9,6 +9,7 @@
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js"
     integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
@@ -17,14 +18,16 @@
   <header>
     <nav class="navbar navbar-dark">
       <div class="nav-links">
-        <button class="btn btn-secondary" id="logout-btn">Home</button>
+        <a class="nav-item nav-link" href="/">Home</a>
         {{#if logged_in}}
         <div>
-          <button class="btn btn-secondary" id="logout-btn">Logout</button>
+          <!--<button class="btn btn-secondary" id="logout-btn">Logout</button>-->
+          <a class="nav-item nav-link" href="/" id="logout">Logout</a>
         </div>
          <a class="nav-item nav-link" href="/profile">Profile</a>
          {{else}}
         <a class="nav-item nav-link" href="/login">Login</a>
+        <a class="nav-item nav-link" href="/signup">SignUp</a>
         {{/if}}
       </div>
     </nav>

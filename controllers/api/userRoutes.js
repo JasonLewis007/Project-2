@@ -24,10 +24,11 @@ router.post('/signup', async (req, res) => {
         });
 
         req.session.save(() => {
-            req.session.loggedIn = true;
-
+            req.session.logged_in = true;
+            req.session.user_id = userData.id;
             // if the user is successfully created, the new response will be returned as json
-            res.status(200).json(userData)
+            res.status(200).json(userData);
+            
         });
     } catch (err) {
         res.status(400).json(err);
