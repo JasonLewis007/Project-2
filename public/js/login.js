@@ -28,7 +28,7 @@ loginForm.on('submit', async (event) => {
         console.log(responseData);
         //if successful login, redirect to the profile page
         if (responseData.success) {
-            window.location.replace('/profile');
+            window.location.replace('/');
         }
 
     } catch (e) {

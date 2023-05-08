@@ -14,16 +14,17 @@ router.get('/', async (req, res) => {
 });
 
 router.get('/profile', withAuth, async (req, res) => {
-    const reservationData = await Reservation.findAll({
-        where: {
-            user_id: req.session.user_id
-        }
+    const userData = await User.findByPk(req.session.user_id, {
+        attributes: { exclude: ['password'] },
+        include: [{ model: Reservation }],
     });
-    const reservations = reservationData.map(reservation => reservation.toJSON());
-    console.log(reservations);
+    
+    const user = userData.toJSON();
+    console.log(user);
+
     res.render('profile', {
         logged_in: req.session.logged_in,
-        reservations
+        ...user
     });
 });
 
@@ -35,7 +36,9 @@ router.get('/login', (req, res) => {
 });
 
 router.get('/form', withAuth, async (req, res) => {
-    res.render('form');
+    res.render('form', {
+        logged_in: req.session.logged_in
+    });
 });
 
 
