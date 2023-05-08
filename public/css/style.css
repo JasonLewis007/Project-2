@@ -5,38 +5,56 @@ body {
   padding: 0;
 }
 
-nav{
-    display: flex;
-    position: fixed;
-    top:0;
-    width: 100%;
-    background-color: rgb(251, 255, 196);
-    overflow: auto;
-    height: auto;
- }
+.navbar {
+    background-color: grey;
+    margin-bottom: 0;
+    border-radius: 0;
+  }
+
+  .logo-image{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -6px;
+}
+
+ul {
+    nav-right: auto;
+    list-style-type: upper-roman;
+    margin: 0;
+    padding: 0;
+  }
+
+.row.content {height: 450px}
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-size: 16px;
+  color: #1a1a1a;
+}
+
+p {
+  background-image: url('https://wallpaperaccess.com/full/3014622.jpg');
+  background-repeat: repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+
+#login {
+    border-radius: 2em;
+    background: rgba(128, 128, 128 , 0.75);
+    color: white;
+  }
+
  
- .left-links{
-    flex:1 1 200px;
- }
- .links {
-    display: inline-block;
-    text-align: center;
-    padding: 14px;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-size: 17px;
-    font-weight: bolder;
- }
-
-* {
-    border: .1px solid rgba(15, 39, 149, 0.419);
-}
-
-main {
-    height: 100vh;
-}
-
-header, footer {
-    background-color: rgb(12, 9, 46);
-}
-
+footer {
+    background-color: #555;
+    color: white;
+    padding: 15px;
+  }
+  
