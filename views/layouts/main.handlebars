@@ -9,21 +9,21 @@
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   <link rel="stylesheet" href="/public/css/jass.css">
   <link rel="stylesheet" href="/public/css/style.css">
-
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </head>
 
 <body>
-
+  <div class="space-background"></div>
   <header>
-    <nav class="navbar navbar-expand navbar-dark">
-       <a class="navbar-brand" href="/"></a>
+    <nav class="navbar navbar-brand-black">
+       <a class="navbar-brand" href="/">
         <img scr="C:\Users\raybo\Documents\GitHub\Project-2\public\images\Tablespotter.png" style="width:auto;">
-    </picture>
-        </div> 
-       <!-- <div class="navbar-expand"> -->
+        </a>
         <ul class="nav navbar-nav navbar-right"></ul>
         {{#if loggedIn}}
         <li class="nav navbar-nav navbar-right" href="#">Logout</li>
+        <li class="nav navbar-nav navbar-right" href="#">Home</li>
+        
         {{else}}
         <li class="nav navbar-nav navbar-right" href="#">Login</li>
         <li class="nav navbar-nav navbar-right" href="#">Register</li>

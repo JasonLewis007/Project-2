@@ -1,60 +1,112 @@
-html,
+main {
+    min-height: 100vh;
+    color: rgb(4, 1, 18)
+  }
+  
+  .homepage-content {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 95%;
+  }
+  
+  .homepage-row {
+    width: 100%;
+  }
+  
+.homepage-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
 body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
+    background-image: url('https://assets.cntraveller.in/photos/63d8e5103d7229d4cf308f01/16:9/w_1024%2Cc_limit/Prequel-lead.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+  }
+  
+  
 .navbar {
     background-color: grey;
     margin-bottom: 0;
     border-radius: 0;
+  
   }
-
-  .logo-image{
-    width: 46px;
-    height: 46px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-top: -6px;
-}
-
-ul {
-    nav-right: auto;
-    list-style-type: upper-roman;
-    margin: 0;
-    padding: 0;
-  }
-
-.row.content {height: 450px}
-
-
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-  font-size: 16px;
-  color: #1a1a1a;
-}
-
-p {
-  background-image: url('https://wallpaperaccess.com/full/3014622.jpg');
-  background-repeat: repeat;
-  background-attachment: fixed; 
-  background-size: 100% 100%;
-}
-
-#login {
-    border-radius: 2em;
-    background: rgba(128, 128, 128 , 0.75);
+  
+.nav-item {
     color: white;
+    margin-top: 3%;
+    font-weight: 600;
+    font-size: 17px;
+    transition: all 0.3s ease;
   }
-
+  
+.nav-item:hover {
+    color: white;
+    transform: scale(1.1);
+  }
+  
  
-footer {
+  @keyframes move {
+    0% {
+        background-size: 100% 100%;
+    }
+  
+    100% {
+        background-size: 150% 150%;
+    }
+  }
+  
+  
+  footer {
     background-color: #555;
     color: white;
     padding: 15px;
   }
   
+  /* if we decice to use button */
+  /* .registerButton,
+  .loginButton {
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 20px;
+    background-color: grey;
+  }
+  
+  .loginButton {
+    background-color: grey;
+  }
+  
+  .registerButton:hover {
+    transform: scale(0.95);
+    background-color: grey;
+  }
+  
+  .loginButton:hover {
+    transform: scale(0.95);
+    background-color: grey;
+  } */
+  /* .nav-links {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-around;
+    color: white;
+    margin-bottom: .5%;
+  }
+   */
+   /* #login {
+    border-radius: 2em;
+    background: rgba(128, 128, 128 , 0.75);
+    color: white;
+  }
+   */
