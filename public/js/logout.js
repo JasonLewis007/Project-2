@@ -1,4 +1,4 @@
-const logoutButton = $("#logout-btn");
+const logoutButton = $("#logout");
 
 logoutButton.click(async (event) => {
     console.log('clicked!')
