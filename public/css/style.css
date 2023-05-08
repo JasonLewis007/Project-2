@@ -39,11 +39,3 @@ main {
 header, footer {
     background-color: rgb(12, 9, 46);
 }
-
-
-.nav-links {
-    display: flex;
-    flex-direction: row;
-    width: 40%;
-    justify-content: space-between;
-}
