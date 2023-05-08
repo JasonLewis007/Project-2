@@ -12,19 +12,19 @@ Reservation.init(
             primaryKey: true,
             autoIncrement: true
         },
-        date: {
+        email: {
             type: DataTypes.STRING,
             allowNull: false
         },
-        time: {
+        first_name: {
             type: DataTypes.STRING,
             allowNull: false
         },
-        partySize: {
-            type: DataTypes.INTEGER,
+        last_name: {
+            type: DataTypes.STRING,
             allowNull: false
         },
-        occasion: {
+        phone_number: {
             type: DataTypes.STRING,
             allowNull: false
         },

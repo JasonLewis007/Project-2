@@ -1,0 +1,30 @@
+[
+    {
+        "email": "fake@gmail.com",
+        "first_name": "Sam",
+        "last_name": "Bates",
+        "phone_number": "4534534",
+        "user_id": "1"
+    },
+    {
+        "email": "fake1@gmail.com",
+        "first_name": "Sarah",
+        "last_name": "Brown",
+        "phone_number": "435345345",
+        "user_id": "2"
+    },
+    {
+        "email": "fake2@gmail.com",
+        "first_name": "Alyssa",
+        "last_name": "Williams",
+        "phone_number": "4355345",
+        "user_id": "1"
+    },
+    {
+        "email": "fake3@gmail.com",
+        "first_name": "Willie",
+        "last_name": "Barrett",
+        "phone_number": "453435345",
+        "user_id": "3"
+    }
+]

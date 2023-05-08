@@ -16,15 +16,25 @@ Restaurant.init(
             type: DataTypes.STRING,
             allowNull: false
         },
+        photo: { 
+            type: DataTypes.BLOB,
+        },
         description: {
             type: DataTypes.TEXT,
             allowNull: false
+        },
+        address: {
+            type: DataTypes.TEXT
         },
         hours: {
             type: DataTypes.STRING,
             allowNull: false
         },
         phone_number: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
+        address: {
             type: DataTypes.STRING,
             allowNull: false
         }

@@ -1,21 +1,23 @@
-//FRONTEND JAVASCRIPT to be used by my "login.handlebars" template
-console.log('Hello from login.js!');
-const loginForm = $('#login-form');
-const emailInput = $('#login-email');
-const passwordInput = $('#login-pw');
+const reservationForm = $('#reservation-form');
+const emailInput = $('#email-reservation');
+const firstName = $('#fname-reservation');
+const lastName = $('#lname-reservation');
+const phoneNum = $('#pnumber-reservation');
 
-loginForm.on('submit', async (event) => {
+reservationForm.on('submit', async (event) => {
     try {
         //prevent the default behavior
         event.preventDefault();
         //collect the login data (email and password)
         const data = {
             email: emailInput.val(),
-            password: passwordInput.val()
+            first_name: firstName.val(),
+            last_name: lastName.val(),
+            phone_number: phoneNum.val()
         }
 
         //send the login data to our login route
-        const response = await fetch('/api/users/login', {
+        const response = await fetch('/api/reservations', {
             method: "POST",
             body: JSON.stringify(data),
             headers: {
@@ -23,12 +25,9 @@ loginForm.on('submit', async (event) => {
             }
         });
 
-        //deal with the response
-        const responseData = await response.json();
-        console.log(responseData);
         //if successful login, redirect to the profile page
-        if (responseData.success) {
-            window.location.replace('/');
+        if (response.ok) {
+            window.location.replace('/profile');
         }
 
     } catch (e) {

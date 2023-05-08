@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { User, Restaurant} = require('../models');
+const { User, Restaurant, Reservation } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
@@ -8,39 +8,23 @@ router.get('/', async (req, res) => {
     const restaurants = restaurantData.map(restaurants => restaurants.toJSON());
 
     res.render('home', {
+        logged_in: req.session.logged_in,
         restaurants
     });
 });
 
 router.get('/profile', withAuth, async (req, res) => {
-    const reservationData = await reservations.findAll({
-        where: {
-            user_id: req.session.user_id
-        }
+    const userData = await User.findByPk(req.session.user_id, {
+        attributes: { exclude: ['password'] },
+        include: [{ model: Reservation }],
     });
-    const reservations = reservationData.map(reservation => reservation.toJSON());
-    console.log(reservations);
+    
+    const user = userData.toJSON();
+    console.log(user);
+
     res.render('profile', {
         logged_in: req.session.logged_in,
-        projects
-    });
-});
-
-router.get('/profile/:id', withAuth, async (req, res) => {
-    const profileId = req.params.id;
-    const profileData = await profile.findByPk(profileId, {
-        include: [
-            {
-                model: User,
-                attributes: ['name'],
-            },
-        ],
-    });
-    const profile = profileData.toJSON();
-    console.log(profile);
-    res.render('profile', {
-        ...profile,
-        logged_in: req.session.logged_in
+        ...user
     });
 });
 
@@ -50,6 +34,20 @@ router.get('/login', (req, res) => {
     }
     res.render('login');
 });
+
+router.get('/signup', (req, res) => {
+    if (req.session.logged_in) {
+        return res.redirect('/profile');
+    }
+    res.render('signup');
+});
+
+router.get('/form', withAuth, async (req, res) => {
+    res.render('form', {
+        logged_in: req.session.logged_in
+    });
+});
+
 
 router.get('/reservations/:id', withAuth, async (req, res) => {
     const reservationId = req.params.id;
