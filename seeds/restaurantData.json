@@ -22,5 +22,61 @@
         "address": "4425 Sharon Rd, Charlotte, NC 28211",
         "hours": "EveryDay 4pm - 10pm",
         "phone_number": "980-580-4848"
+    },
+    {
+        "name": "The Pump House",
+        "photo": "https://www.therooftopguide.com/rooftop-bars-in-charlotte/Bilder/the-pump-house-600-3.jpg",
+        "description": "The Pump House is an affordable upscale restaurant and rooftop bar located a little bit outside of Charlotte. Between Rock Hill and Fort Mill, it is only about a 30 minute car ride away from the city center, but during the drive you do actually swap state from North to South Carolina. But such a unique place, it is well worth a bit of traveling.",
+        "address": "575 herrons ferry road, rock hill, sc 29730",
+        "hours": "mon-thurs | 11:30am - 10pm fri-sat | 11am - 11pm sun | 10am - 3pm & 4pm - 9pm",
+        "phone_number": "803-329-8888"
+    },
+    {
+        "name": "Firebirds Wood Fired Grill",
+        "photo": "https://resizer.otstatic.com/v2/photos/wide-huge/1/24979800.jpg",
+        "description": "We are an American Restaurant and Steakhouse known for our scratch kitchen, bold flavors and inviting atmosphere. Enjoy our signature menu items including hand-cut, aged steaks and fresh seafood or our specialty crafted cocktails and select wines.",
+        "address": "3920 Sharon Rd, Charlotte, NC 28211",
+        "hours": "Sunday - Thursday from 11AM - 10PM, Friday - Saturday from 11AM - 10PM",
+        "phone_number": "704-366-3655"
+    },
+    {
+        "name": "Deluxe Fun Dining Restaurant",
+        "photo": "https://lh3.googleusercontent.com/places/AJQcZqKwXfBIJQKHUmJKbnftFnn68CEZsrZAZyM7QuHpTABG6vD4D10IdiCveFMCzqxItw-vxacazNw0PT8vACw4shv6-L6F2YaxPyo=s1600-h650",
+        "description": "Deluxe Fun Dining Restaurant takes pride in reimagining the way people enjoy and experience food. Setting an ambitious standard for a restaurant with our ever-evolving menu and immersive atmosphere, our guests have the privilege of tasting the bold and unique flavors that come from years of training and experience.",
+        "address": "305 W 4th St, Charlotte, NC 28202",
+        "hours": "Sunday - Tuesday from 11:30AM - 9PM, Wednesday - Thursday from 11:30AM - 10PM, Friday - Saturday from 11:30AM - 12AM",
+        "phone_number": "980-237-8042"
+    },
+    {
+        "name": "Fahrenheit Charlotte",
+        "photo": "https://www.therooftopguide.com/rooftop-bars-in-charlotte/Bilder/fahrenheit-600-1.jpg",
+        "description": "Fahrenheit menu, says Chef Rocco Whalen, is “inventive, new American regional cuisine.” It is Roccos dedication to using the finest and freshest, locally sourced seasonal ingredients along with Asian insinuations that make this fare uniquely his own. The menu is so imaginative and distinctive youll not find anything else like it no matter where your travels take you.",
+        "address": "222 S Caldwell St 21st Floor, Charlotte, NC 28202",
+        "hours": "Sunday 11AM - 2:30PM and 5PM - 11PM, Monday - Thursday from 5PM - 11PM, Friday 5PM - 2AM, Saturday 4PM - 2AM",
+        "phone_number": "980-237-6718"
+    },
+    {
+        "name": "Que Onda Tacos + Tequila Uptown",
+        "photo": "https://charlotte.axios.com/wp-content/uploads/2016/11/bar-area-at-que-onda-tacos-uptown-charlotte.jpg",
+        "description": "Welcome to Que Onda Tacos + Tequila. Your favorite Mexican hang out spot! Street Tacos, 100% Blue Agave Tequila & Mexican + Local Tarros (Beer) are flowing alongside regional inspired Mexican Comfort flavors! See you soon!",
+        "address": "333 W Trade St #101, Charlotte, NC 28202",
+        "hours": "Sunday 11AM - 9PM, Monday Closed, Tuesday - Thursday from 11AM - 10PM, Friday - Saturday from 11AM - 11PM",
+        "phone_number": "980-256-2538"
+    },
+    {
+        "name": "The Capital Grille",
+        "photo": "https://eventective-media.azureedge.net/2104957_lg.jpg",
+        "description": "The restaurant is inside the Fifth Third Center across from the Charlotte Marriott City Center and Discovery Place Science. Enjoy dry-aged steaks and fresh seafood made from the highest quality ingredients prepared with you in mind. To complement your dining experience, we feature over 325 new and old world wines curated by our Advanced Sommelier and classic cocktails with our own twist.",
+        "address": "201 N Tryon St, Charlotte, NC 28202",
+        "hours": "Sunday 5PM - 9PM, Monday - Thursday from 11:30AM to 9PM, Friday 11:30AM - 10PM, Saturday 5PM - 10PM",
+        "phone_number": "704-348-1400"
+    },
+    {
+        "name": "The Fig Tree Restaurant",
+        "photo": "https://figtreeeatery.com/wp-content/uploads/2020/04/Fig-Tree-Cafe_PB-Interior-16.jpg",
+        "description": "The comfortable yet elegant setting of the house creates a unique dining experience. Boasting ﬁve stunning dining rooms, expansive seating on the veranda and patio, as well as multiple grand ﬁreplaces and a full service bar, everything about the aesthetics of the restaurant — from the original woodwork to the blooming ﬁg trees will delight. The Fig Tree Restaurant is a trifecta of decadent meals, perfectly paired wines, and exceptional service.",
+        "address": "1601 E 7th St, Charlotte, NC 28204",
+        "hours": "Sunday 5PM - 9PM, Monday - Friday from 5:30PM - 10PM, Saturday 5 - 10PM",
+        "phone_number": "704-332-3322"
     }
 ]
