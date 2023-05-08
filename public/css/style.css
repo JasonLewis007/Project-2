@@ -1,42 +1,104 @@
-html,
-body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-nav{
-    display: flex;
-    position: fixed;
-    top:0;
-    width: 100%;
-    background-color: rgb(251, 255, 196);
-    overflow: auto;
-    height: auto;
- }
- 
- .left-links{
-    flex:1 1 200px;
- }
- .links {
-    display: inline-block;
-    text-align: center;
-    padding: 14px;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-size: 17px;
-    font-weight: bolder;
- }
-
-* {
-    border: .1px solid rgba(15, 39, 149, 0.419);
-}
-
 main {
-    height: 100vh;
-}
-
-header, footer {
-    background-color: rgb(12, 9, 46);
-}
-
+    min-height: 100vh;
+    color: rgb(245, 244, 248);
+    text-decoration-color: darkgray;  
+    }
+  
+  .homepage-content {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 95%;
+    background-image:url('https://assets.cntraveller.in/photos/63d8e5103d7229d4cf308f01/16:9/w_1024%2Cc_limit/Prequel-lead.jpg');
+  }
+  
+  .homepage-row {
+    width: 100%;
+    }
+  
+  .homepage-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  body {
+    background-image: url('https://assets.cntraveller.in/photos/63d8e5103d7229d4cf308f01/16:9/w_1024%2Cc_limit/Prequel-lead.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+  }
+  
+  
+  .navbar {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    margin-bottom: 0;
+    border-radius: 0;
+  
+  }
+  
+  .nav-item {
+    color: white;
+    margin-top: 3%;
+    font-weight: 600;
+    font-size: 17px;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-item:hover {
+    color: white;
+    transform: scale(1.1);
+  }
+  
+  
+  footer {
+    background-color: #080000;
+    color: white;
+    padding: 15px;
+  }
+  
+  /* if we decice to use button */
+  /* .registerButton,
+  .loginButton {
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 20px;
+    background-color: grey;
+  }
+  
+  .loginButton {
+    background-color: grey;
+  }
+  
+  .registerButton:hover {
+    transform: scale(0.95);
+    background-color: grey;
+  }
+  
+  .loginButton:hover {
+    transform: scale(0.95);
+    background-color: grey;
+  } */
+  /* .nav-links {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-around;
+    color: white;
+    margin-bottom: .5%;
+  }
+   */
+   /* #login {
+    border-radius: 2em;
+    background: rgba(128, 128, 128 , 0.75);
+    color: white;
+  } */ 
