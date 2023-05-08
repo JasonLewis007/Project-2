@@ -25,11 +25,8 @@ reservationForm.on('submit', async (event) => {
             }
         });
 
-        //deal with the response
-        const responseData = await response.json();
-        console.log(responseData);
         //if successful login, redirect to the profile page
-        if (responseData.success) {
+        if (response.ok) {
             window.location.replace('/profile');
         }
 

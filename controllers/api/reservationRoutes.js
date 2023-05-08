@@ -13,7 +13,6 @@ router.post('/', withAuth, async (req, res) => {
         });
 
 
-
         // if the user is successfully created, the new response will be returned as json
         res.status(200).json(newReservation)
 
