@@ -53,19 +53,7 @@ body {
     color: white;
     transform: scale(1.1);
   }
-  
- 
-  @keyframes move {
-    0% {
-        background-size: 100% 100%;
-    }
-  
-    100% {
-        background-size: 150% 150%;
-    }
-  }
-  
-  
+
   footer {
     background-color: #555;
     color: white;
