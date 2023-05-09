@@ -1,14 +1,16 @@
+<h1 class="text-center">Featured Restaurants!</h1>
 <div class="container">
     <div class="row">
         {{#each restaurants}}
-        <div class="col-sm-6 p-3">
+        <div class="col-md-6 p-3">
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">{{name}}</h5>
                     <h6 class="card-subtitle mb-2 text-body-secondary">{{address}}</h6>
                     <p class="card-text">{{description}}</p>
-                    <div class="text-center">
+                    <div class="text">
                         <h4 class="mb-5"><span class="badge bg-secondary">Phone number: {{phone_number}}</span></h4>
+                        <h3 class="mb-1"><span class="badge bg-secondary">Hours: {{hours}}</span></h3>
                         <p>
                             <a href="/form" class="card-link"><button class="btn btn-primary">Book Here!</button></a>
                         </p>
