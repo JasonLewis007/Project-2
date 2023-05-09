@@ -3,7 +3,7 @@ const emailInput = $('#email-reservation');
 const firstName = $('#fname-reservation');
 const lastName = $('#lname-reservation');
 const phoneNum = $('#pnumber-reservation');
-const restaurantName = $('restaurant-options')
+const restaurantName = $('#restaurant-options');
 
 reservationForm.on('submit', async (event) => {
     try {
