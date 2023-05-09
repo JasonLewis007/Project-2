@@ -28,6 +28,10 @@ Reservation.init(
             type: DataTypes.STRING,
             allowNull: false
         },
+        restaurant_name: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
         user_id: {
             type: DataTypes.INTEGER,
             references: {

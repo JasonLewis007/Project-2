@@ -49,23 +49,23 @@ router.get('/form', withAuth, async (req, res) => {
 });
 
 
-router.get('/reservations/:id', withAuth, async (req, res) => {
-    const reservationId = req.params.id;
-    const reservationData = await reservations.findByPk(reservationId, {
-        include: [
-            {
-                model: User,
-                attributes: ['name'],
-            },
-        ],
-    });
-    const reservations = reservationData.toJSON();
-    console.log(reservations);
-    res.render('reservations', {
-        ...reservations,
-        logged_in: req.session.logged_in
-    });
-});
+//router.get('/reservations/:id', withAuth, async (req, res) => {
+//    const reservationId = req.params.id;
+//   const reservationData = await reservations.findByPk(reservationId, {
+//        include: [
+//            {
+//               model: User,
+//                attributes: ['name'],
+//            },
+//        ],
+//    });
+//   const reservations = reservationData.toJSON();
+//    console.log(reservations);
+//    res.render('reservations', {
+//        ...reservations,
+//        logged_in: req.session.logged_in
+//   });
+//});
 
 // router.get('/review/:id', withAuth, async (req, res) => {
 //     const reviewId = req.params.id;
