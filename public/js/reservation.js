@@ -3,6 +3,7 @@ const emailInput = $('#email-reservation');
 const firstName = $('#fname-reservation');
 const lastName = $('#lname-reservation');
 const phoneNum = $('#pnumber-reservation');
+const restaurantName = $('restaurant-options')
 
 reservationForm.on('submit', async (event) => {
     try {
@@ -13,7 +14,8 @@ reservationForm.on('submit', async (event) => {
             email: emailInput.val(),
             first_name: firstName.val(),
             last_name: lastName.val(),
-            phone_number: phoneNum.val()
+            phone_number: phoneNum.val(),
+            restaurant_name: restaurantName.val()
         }
 
         //send the login data to our login route
@@ -28,6 +30,7 @@ reservationForm.on('submit', async (event) => {
         //if successful login, redirect to the profile page
         if (response.ok) {
             window.location.replace('/profile');
+
         }
 
     } catch (e) {
