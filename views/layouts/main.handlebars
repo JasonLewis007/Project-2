@@ -21,13 +21,12 @@
         </a>
         <ul class="nav navbar-nav navbar-right"></ul>
         {{#if logged_in}}
-        <li class="nav navbar-nav navbar-right" href="/" id="logout">Logout</li>
-        <li class="nav navbar-nav navbar-right" href="/home">Home</li>
-        <li class="nav navbar-nav navbar-right" href="/profile">Profile</li>
+        <a class="nav navbar-nav navbar-right" href="/" id="logout">Logout</a>
+        <a class="nav navbar-nav navbar-right" href="/profile">Profile</a>
         
         {{else}}
-        <li class="nav navbar-nav navbar-right" href="/login">Login</li>
-        <li class="nav navbar-nav navbar-right" href="/signup">Register</li>
+        <a class="nav navbar-nav navbar-right" href="/login">Login</a>
+        <a class="nav navbar-nav navbar-right" href="/signup">Register</a>
         {{/if}}
       </div>
     </nav>
