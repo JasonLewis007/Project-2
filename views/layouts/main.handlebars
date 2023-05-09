@@ -16,26 +16,24 @@
   <div class="space-background"></div>
   <header>
     <nav class="navbar navbar-brand-black">
-      <a class="navbar-brand" href="/">
-        <img scr="C:\Users\raybo\Documents\GitHub\Project-2\public\images\Tablespotter.png" style="width:auto;">
-      </a>
-      <ul class="nav navbar-nav navbar-right"></ul>
-      {{#if logged_in}}
-      <li class="nav navbar-nav navbar-right"><a href="/" id="logout">Logout</a></li>
-      <li class="nav navbar-nav navbar-right"><a href="/">Home</a></li>
-      <li class="nav navbar-nav navbar-right"><a href="/profile">Profile</a></li>
-
-      {{else}}
-      <li class="nav navbar-nav navbar-right"><a href="/login">Login</a></li>
-      <li class="nav navbar-nav navbar-right"><a href="/signup">Register</a></li>
-      {{/if}}
+       <a class="navbar-brand" href="/">
+        <img src="/images/Tablespotter.png" width="200" height="200"/>
+        </a>
+        <ul class="nav navbar-nav navbar-right"></ul>
+        {{#if logged_in}}
+        <li class="nav navbar-nav navbar-right" href="/" id="logout>Logout</li>
+        <li class="nav navbar-nav navbar-right" href="/">Home</li>
+        <li class="nav navbar-nav navbar-right" href="/profile">Profile</li>
+        {{else}}
+        <li class="nav navbar-nav navbar-right" href="/login">Login</li>
+        <li class="nav navbar-nav navbar-right" href="/signup">Register</li>
+        {{/if}}
       </div>
     </nav>
   </header>
 
   <main class="container container-fluid mt-5">
-    <h1 class>Featured Restaurants in Charlotte</h1>
-    {{{ body }}}
+   {{{ body }}}
   </main>
 
   <footer>
