@@ -74,3 +74,11 @@ p {
     padding: 15px;
   }
   
+#profile-card {
+  background-color: #000000;
+  border: transparent;
+  padding: 10px;
+  position: static;
+  max-width: 400px;
+  margin: 40px auto;
+}
