@@ -28,7 +28,7 @@ router.post('/', withAuth, async (req, res) => {
           });
           
           let mailOptions = {
-            from: 'tablespotter@gmail.com',
+            from: 'TableSpotter@gmail.com',
             to: req.body.email,
             subject: 'Table Spotter Reservation',
             text: `You created a reservation at ${req.body.restaurant_name}`
