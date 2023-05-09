@@ -1,46 +1,49 @@
 main {
-    min-height: 100vh;
     color: rgb(245, 244, 248);
-    text-decoration-color: darkgray;  
-    }
+    text-decoration-color: rgb(245, 244, 248);  
+  }
   
-  .homepage-content {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 95%;
+.homepage-content {
+    max-width: 100%;
     background-image:url('https://assets.cntraveller.in/photos/63d8e5103d7229d4cf308f01/16:9/w_1024%2Cc_limit/Prequel-lead.jpg');
   }
-  
-  .homepage-row {
-    width: 100%;
-    }
-  
-  .homepage-left {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-  }
-  
-  
+ 
 body {
     background-image: url('https://assets.cntraveller.in/photos/63d8e5103d7229d4cf308f01/16:9/w_1024%2Cc_limit/Prequel-lead.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed; 
     background-size: 100% 100%;
-}
+    
+  }
 
 .card-body {
-  max-width: flex;
-  background-color: #a29f9f;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  border: 1px solid transparent;
+  background-color: #000000;
+  border: transparent;
+  padding: 20px;
+  position: static;
+  max-width: 500px;
+  margin: 10px auto;
+  box-shadow: 0px 0px 20px 2px #ffffff;
 }
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+h4,h5,h6 {
+  margin: 0 0 0.5rem 0;
+  padding: 0 0 0.25rem 0;
+  text-align: center;
+} 
+
+p {
+  text-align: center;
+  margin-bottom: 0.2em;
+   
+} 
 
 .navbar {
     background-color: black;
