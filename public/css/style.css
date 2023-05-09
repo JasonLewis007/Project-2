@@ -23,20 +23,26 @@ main {
   .homepage-left {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
   }
   
   
-  body {
+body {
     background-image: url('https://assets.cntraveller.in/photos/63d8e5103d7229d4cf308f01/16:9/w_1024%2Cc_limit/Prequel-lead.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed; 
     background-size: 100% 100%;
-  }
-  
-  
-  .navbar {
+}
+
+.card-body {
+  max-width: flex;
+  background-color: #a29f9f;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  border: 1px solid transparent;
+}
+
+.navbar {
     background-color: black;
     color: white;
     padding: 15px;
@@ -45,7 +51,7 @@ main {
   
   }
   
-  .nav-item {
+.nav-item {
     color: white;
     margin-top: 3%;
     font-weight: 600;
@@ -65,40 +71,3 @@ main {
     padding: 15px;
   }
   
-  /* if we decice to use button */
-  /* .registerButton,
-  .loginButton {
-    border-radius: 5px;
-    font-size: 20px;
-    font-weight: 500;
-    padding: 10px 20px;
-    background-color: grey;
-  }
-  
-  .loginButton {
-    background-color: grey;
-  }
-  
-  .registerButton:hover {
-    transform: scale(0.95);
-    background-color: grey;
-  }
-  
-  .loginButton:hover {
-    transform: scale(0.95);
-    background-color: grey;
-  } */
-  /* .nav-links {
-    display: flex;
-    flex-direction: row;
-    width: 50%;
-    justify-content: space-around;
-    color: white;
-    margin-bottom: .5%;
-  }
-   */
-   /* #login {
-    border-radius: 2em;
-    background: rgba(128, 128, 128 , 0.75);
-    color: white;
-  } */ 

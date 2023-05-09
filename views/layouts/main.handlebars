@@ -17,16 +17,17 @@
   <header>
     <nav class="navbar navbar-brand-black">
        <a class="navbar-brand" href="/">
-        <img src="/images/Tablespotter.png" width="200" height="200"/>
+        <img src="/images/Tablespotter.png" width="100" height="100"/>
         </a>
         <ul class="nav navbar-nav navbar-right"></ul>
         {{#if loggedIn}}
-        <li class="nav navbar-nav navbar-right" href="#">Logout</li>
-        <li class="nav navbar-nav navbar-right" href="#">Home</li>
+        <li class="nav navbar-nav navbar-right" href="/" id="logout">Logout</li>
+        <li class="nav navbar-nav navbar-right" href="/home">Home</li>
+        <li class="nav navbar-nav navbar-right" href="/profile">Profile</li>
         
         {{else}}
-        <li class="nav navbar-nav navbar-right" href="#">Login</li>
-        <li class="nav navbar-nav navbar-right" href="#">Register</li>
+        <li class="nav navbar-nav navbar-right" href="/login">Login</li>
+        <li class="nav navbar-nav navbar-right" href="/signup">Register</li>
         {{/if}}
       </div>
     </nav>
