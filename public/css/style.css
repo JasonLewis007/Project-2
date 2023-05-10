@@ -45,6 +45,7 @@ p {
    
 } 
 
+
 .topnav {
   background-color: #000000;
   overflow: hidden;
@@ -66,16 +67,7 @@ p {
   margin: 2%;
 }
 
-/* .nav-item {
-    color: white;
-    margin-top: 10%; 
-    width: 123px;
-    height: 120px;
-    font-weight: 600; 
-    font-size: 25px;
-    padding: 100;
-    margin: 100;
-} */
+
   
 footer {
     background-color: #080000;
@@ -85,4 +77,12 @@ footer {
     bottom: 0%;
   }
   
+#profile-card {
+  background-color: #000000;
+  border: transparent;
+  padding: 10px;
+  position: static;
+  max-width: 400px;
+  margin: 40px auto;
+}
 

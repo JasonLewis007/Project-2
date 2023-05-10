@@ -1,16 +1,16 @@
 <div class="container">
     <div class="row">
-        <h2 class="card-title">Wecome Back {{firstName}}!!!</h2>
+        <h2 class="card-title text-center">Welcome Back {{firstName}}!!!</h2>
         {{#each reservations}}
         <div class="col-sm-6 p-3">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">{{first_name}} {{last_name}}</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">{{restaurant_name}}</h6>
-                    <p class="card-text">{{email}}</p>
-                    <div class="text-center">
-                        <h4 class="mb-5"><span class="badge bg-secondary">Phone number: {{phone_number}}</span></h4>
-                    </div>
+            <div class="card" id="profile-card" >
+                <div>
+                    <h5 class="card-title" style="color: white">Name: {{first_name}} {{last_name}}</h5>
+                    <h6 class="card-title" style="color: white">Reservation made at: {{restaurant_name}}</h6>
+                    <p class="card-text" style="color: white">Email: {{email}}</p>
+                    <p class="card-test" style="color: white">Phone number: {{phone_number}}</p>
+                    <p class="card-test" style="color: white">For: {{date}}</p>
+                    <p class="card-test" style="color: white">At: {{time}}</p>
                 </div>
             </div>
         </div>
