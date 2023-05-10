@@ -13,21 +13,22 @@
 </head>
 
 <body>
-  <div class="space-background"></div>
-  <header>
-    <nav class="navbar navbar-brand-black">
-      <a class="navbar-brand" href="/">
-        <img src="/images/Tablespotter.png" width="100" height="100" />
-      </a>
-    {{#if logged_in}}
-    <a class="nav navbar-nav navbar-right" href="/" id="logout">Logout</a>
-    <a class="nav navbar-nav navbar-right" href="/profile">Profile</a>
 
-    {{else}}
-    <a class="nav navbar-nav navbar-right" href="/login">Login</a>
-    <a class="nav navbar-nav navbar-right" href="/signup">Register</a>
-    {{/if}}
-    </div>
+   <header>
+    <nav class="topnav">
+       <a class="navbar-brand" href="/">
+        <img src="/images/Tablespotter.png" width="150" height="150"/>
+        </a>
+        {{#if logged_in}}
+        <a href="/profile"class="split">Profile</a>
+        <a href="/" id="logout"class="split">Logout</a>
+        <a href="/form"class="split">Book Here!</a>
+        {{else}}
+        <a href="/login"class="split">Login</a>
+        <a href="/signup"class="split">Register</a>
+        {{/if}}
+      </div>
+
     </nav>
   </header>
 

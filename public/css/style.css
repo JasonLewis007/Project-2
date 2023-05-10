@@ -45,31 +45,36 @@ p {
    
 } 
 
-.navbar {
-    background-color: black;
-    color: white;
-    padding: 15px;
-    margin-bottom: 0;
-    border-radius: 0;
-  }
+
+.topnav {
+  background-color: #000000;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: #ffffff;
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a.split {
+  float: right;
+  background-color: #000000;
+  color: white;
+  padding: 20;
+  margin: 2%;
+}
+
+
   
-.nav-item {
-    color: white;
-    margin-top: 3%;
-    font-weight: 600;
-    font-size: 17px;
-    transition: all 0.3s ease;
-  }
-  .nav-item:hover {
-    color: white;
-    transform: scale(1.1);
-  }
-  
-  
-  footer {
+footer {
     background-color: #080000;
     color: white;
     padding: 15px;
+    position: static;
+    bottom: 0%;
   }
   
 #profile-card {
@@ -80,3 +85,4 @@ p {
   max-width: 400px;
   margin: 40px auto;
 }
+
