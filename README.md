@@ -28,9 +28,10 @@ Tiger Nguyen
 Ray Mcfarlane
 Jason Lewis
 ## Test 
-npm test
+Tested nodemailer
+Deployed on local host
 ## GitHub: 
-jasonlewis007
+https://jasonlewis007.github.io/Project-2/
 ## Heroku: 
 
 ## Screen shot:
