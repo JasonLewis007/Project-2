@@ -37,7 +37,11 @@ Restaurant.init(
         address: {
             type: DataTypes.STRING,
             allowNull: false
-        }
+        },
+        website: {
+            type: DataTypes.STRING,
+
+    },
     },
     {
         sequelize,
