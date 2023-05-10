@@ -4,6 +4,8 @@ const firstName = $('#fname-reservation');
 const lastName = $('#lname-reservation');
 const phoneNum = $('#pnumber-reservation');
 const restaurantName = $('#restaurant-options');
+const date = $('#date-reservation');
+const time = $('#time-reservation');
 
 reservationForm.on('submit', async (event) => {
     try {
@@ -15,7 +17,9 @@ reservationForm.on('submit', async (event) => {
             first_name: firstName.val(),
             last_name: lastName.val(),
             phone_number: phoneNum.val(),
-            restaurant_name: restaurantName.val()
+            restaurant_name: restaurantName.val(),
+            date: date.val(),
+            time: time.val()
         }
 
         //send the login data to our login route

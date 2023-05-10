@@ -13,7 +13,9 @@ router.post('/', withAuth, async (req, res) => {
             last_name: req.body.last_name,
             phone_number: req.body.phone_number,
             user_id: req.session.user_id,
-            restaurant_name: req.body.restaurant_name
+            restaurant_name: req.body.restaurant_name,
+            date: req.body.date,
+            time: req.body.time
         });
         let transporter = nodeMailer.createTransport({
             service: 'gmail',
@@ -31,7 +33,7 @@ router.post('/', withAuth, async (req, res) => {
             from: 'tablespotter@gmail.com',
             to: req.body.email,
             subject: 'Table Spotter Reservation',
-            text: `You created a reservation at ${req.body.restaurant_name}`
+            text: `You created a reservation for ${req.body.restaurant_name} on ${req.body.date} at ${req.body.time}`
           };
           
           transporter.sendMail(mailOptions, function(err, data) {
