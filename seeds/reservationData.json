@@ -5,7 +5,9 @@
         "last_name": "Bates",
         "phone_number": "4534534",
         "user_id": "1",
-        "restaurant_name": "Phở Hoà Noodle Soup"
+        "restaurant_name": "Phở Hoà Noodle Soup",
+        "date": "5/12/2023",
+        "time": "1:00pm"
     },
     {
         "email": "fake1@gmail.com",
@@ -13,7 +15,9 @@
         "last_name": "Brown",
         "phone_number": "435345345",
         "user_id": "2",
-        "restaurant_name": "Boiling Pot"
+        "restaurant_name": "Boiling Pot",
+        "date": "5/15/2023",
+        "time": "9:00am"
     },
     {
         "email": "fake2@gmail.com",
@@ -21,7 +25,9 @@
         "last_name": "Williams",
         "phone_number": "4355345",
         "user_id": "1",
-        "restaurant_name": "Steak 48"
+        "restaurant_name": "Steak 48",
+        "date": "5/23/2023",
+        "time": "3:00pm"
     },
     {
         "email": "fake3@gmail.com",
@@ -29,6 +35,8 @@
         "last_name": "Barrett",
         "phone_number": "453435345",
         "user_id": "3",
-        "restaurant_name": "The Pump House"
+        "restaurant_name": "The Pump House",
+        "date": "5/26/2023",
+        "time": "5:00pm"
     }
 ]
