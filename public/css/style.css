@@ -2,6 +2,10 @@ main {
     color: rgb(245, 244, 248);
     text-decoration-color: rgb(245, 244, 248);  
   }
+
+  h4,h5,h6,p {
+    font-family: Arial, Helvetica, sans-serif;
+  }
   
 .homepage-content {
     max-width: 100%;
